@@ -1,0 +1,70 @@
+/* About page container */
+.about-container {
+    background-color: #f5f7fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+/* Section styling */
+.about-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* Feature list styling */
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #495057;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.feature-list li::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Make sections responsive */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-content, .feature-list li {
+        font-size: 1rem;
+    }
+}
