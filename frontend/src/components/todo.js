@@ -47,6 +47,7 @@ function Todo() {
             setEditedDeadline("");
         }
     };
+    
     // Function to add task to the database using fetch API
     const addTask = (e) => {
         e.preventDefault();
@@ -76,6 +77,7 @@ function Todo() {
             })
             .catch((err) => console.error(err));
     };
+    
     //Function to save edited task to the database using fetch API
     const saveEditedTask = (id) => {
         const editedData = {
@@ -111,6 +113,7 @@ function Todo() {
             })
             .catch((err) => console.error(err));
     };
+    
     // Function to delete task from the database using fetch API
     const deleteTask = (id) => {
         fetch(`http://127.0.0.1:3001/deleteTodoList/${id}`, {
