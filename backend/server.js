@@ -7,10 +7,8 @@ var app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to your MongoDB database (replace with your database URL)
 mongoose.connect("mongodb+srv://panaramalay:malaypanara@cluster0.vdhvm.mongodb.net/todoList");
 
-// Check for database connection errors
 mongoose.connection.on("error", (error) => {
     console.error("MongoDB connection error:", error);
 });
